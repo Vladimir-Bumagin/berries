@@ -1,0 +1,58 @@
+.pop-up-menu {
+  display: none;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    grid-auto-flow: dense;
+    width: 100%;
+  }
+
+  @include desktop {
+    grid-template-columns: 450px 1fr 400px;
+  }
+
+  .no-js & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @include tablet {
+      padding-top: 0;
+      display: grid;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+
+    @include tablet {
+      grid-column: 1/2;
+      grid-row: span 1;
+      padding-left: 50px;
+    }
+
+    @include desktop {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: 0;
+    }
+  }
+}
+
+.pop-up-menu--is-open {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+
+  @include tablet {
+    z-index: 0;
+    position: static;
+    display: grid;
+  }
+}

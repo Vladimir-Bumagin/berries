@@ -1,0 +1,80 @@
+.contacts__phone,
+.contacts__email {
+  color: $color-black;
+  font-family: $font-raleway;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  max-width: 266px;
+
+  &:hover {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green;
+  }
+}
+
+.contacts__address {
+  color: $color-black;
+  font-family: $font-raleway;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  max-width: 266px;
+}
+
+.contacts__text-wrapper {
+  padding: 0 4px;
+  display: block;
+
+  &--address {
+    padding: 0;
+    max-width: 230px;
+  }
+}
+
+.contacts__map {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 42px;
+
+  @include tablet {
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__map-picture {
+  display: flex;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.contacts__map-image {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contacts__map-iframe {
+  display: flex;
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  @include tablet {
+    height: 457px;
+  }
+}
