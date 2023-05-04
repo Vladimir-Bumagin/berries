@@ -1,0 +1,33 @@
+.button {
+  font-family: $font-raleway;
+  background-color: $color-purple;
+  padding: 16px;
+  color: $color-white-creamy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.25);
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $color-purple-hover;
+  }
+
+  &:active {
+    background-color: $color-purple-active;
+  }
+}

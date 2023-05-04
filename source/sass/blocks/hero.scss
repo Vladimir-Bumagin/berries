@@ -1,0 +1,79 @@
+.hero {
+  max-width: 100%;
+  background-image: url("../../img/decorative-images/hero-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 192px;
+  background-color: #dce5ee;
+}
+
+.hero__title {
+  font-family: $font-comfortaa;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-green;
+  max-width: 265px;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.hero__item {
+  padding-left: 44px;
+  font-family: $font-raleway;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-black;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+  }
+
+  &--fresh-berries {
+    &::after {
+      background-image: url("../../img/leaf-green.svg");
+    }
+  }
+
+  &--shock-freezing {
+    &::after {
+      background-image: url("../../img/ice-green.svg");
+    }
+  }
+
+  &--delivery {
+    &::after {
+      background-image: url("../../img/delivery-green.svg");
+    }
+  }
+}
+
+.hero__order-button {
+  width: 264px;
+}
