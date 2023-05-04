@@ -16,12 +16,7 @@
   text-decoration: none;
   cursor: pointer;
   border: none;
-  box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.25);
-
-  @include tablet {
-    font-size: 20px;
-    line-height: 20px;
-  }
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
 
   &:hover {
     background-color: $color-purple-hover;
