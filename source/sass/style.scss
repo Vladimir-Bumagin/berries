@@ -1,10 +1,10 @@
 /* GLOBAL */
 @import "./global/variables";
+@import "./global/mixins.scss";
 @import "./global/global";
 @import "./global/fonts";
 @import "./global/container";
 @import "./global/reboot.scss";
-@import "./global/mixins.scss";
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
@@ -14,3 +14,4 @@
 @import "./blocks/pop-up-menu.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/main-footer.scss";
+@import "./blocks/socials.scss";

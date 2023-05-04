@@ -44,14 +44,13 @@
 .contacts__map {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 42px;
 
   @include tablet {
     margin-bottom: 55px;
   }
 
   @include desktop {
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 }
 

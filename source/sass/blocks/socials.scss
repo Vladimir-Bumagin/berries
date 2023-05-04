@@ -1,0 +1,39 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 32px);
+  gap: 20px;
+  min-width: 136px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fit, 40px);
+    gap: 32px;
+    max-width: 300px;
+    margin-top: 36px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  color: $color-green;
+  width: 32px;
+  height: 32px;
+
+  &:hover {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green-active;
+  }
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+}
