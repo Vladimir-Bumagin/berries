@@ -1,0 +1,49 @@
+.main-footer {
+  width: 100%;
+  margin: 0 auto;
+  color: $color-blue-gray;
+  display: flex;
+}
+
+.main-footer__logo {
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 135px;
+  color: $color-green;
+  margin-right: 80px;
+
+  @include tablet {
+    top: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--current {
+    pointer-events: none;
+  }
+}
+
+.main-footer__logo-image {
+  @include tablet {
+    width: 58px;
+    height: 60px;
+  }
+}
+
+.main-footer__logo-text {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}

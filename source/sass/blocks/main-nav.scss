@@ -1,41 +1,26 @@
 .main-nav {
   display: flex;
   background-color: transparent;
-
-  @include tablet {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .main-nav__list {
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0 0;
   list-style-type: none;
-  background-color: $color-white;
   width: 100%;
 
   @include tablet {
+    padding-top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    gap: 16px;
     background-color: transparent;
-
-    &--site-nav {
-      grid-column: 2/3;
-      grid-row: 1/2;
-      grid-template-columns: 84px 1fr;
-      padding-right: 50px;
-      position: relative;
-    }
   }
 
   @include desktop {
-    background-color: transparent;
-    max-width: 100%;
-
-    &--site-nav {
-      grid-column: 3/4;
-      grid-row: 1/2;
-    }
+    grid-template-columns: repeat(auto-fit, 132px);
+    gap: 28px;
   }
 }
 
@@ -43,42 +28,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include tablet {
-    box-shadow: none;
-  }
 }
 
 .main-nav__link {
   display: flex;
   width: 100%;
-  padding: 28px 27px 27px 76px;
+  padding: 16px 14px 16px 40px;
   color: $color-black;
   font-family: $font-raleway;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
   text-decoration: none;
 
+  &:hover {
+    color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-green;
+  }
+
   @include tablet {
-    font-size: 15px;
+    padding: 20px 0 20px 0;
   }
 
   &--current {
     pointer-events: none;
   }
-}
 
-.main-nav__link-text {
-  @include tablet {
-    font-size: 17px;
+  .no-js & {
+    padding-left: 14px;
+
+    @include tablet {
+      padding-left: 0;
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 29px;
-  right: 30px;
+  top: 4px;
+  right: 26px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/close-menu.svg");
@@ -108,8 +99,8 @@
 }
 
 .main-nav__toggle.main-nav__toggle--close {
-  right: 31px;
-  top: 32px;
+  right: 26px;
+  top: 4px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/open-menu.svg");
