@@ -65,6 +65,11 @@
       column-gap: 24px;
     }
   }
+
+  .order-form__form-field--personal-info & {
+    display: grid;
+    row-gap: 36px;
+  }
 }
 
 .order-form__form-field--berries,
@@ -191,30 +196,60 @@
       padding-left: 48px;
     }
   }
+
+  .order-form__form-field--personal-info & {
+    padding-left: 0;
+  }
+}
+
+.order-form__label-text {
+  font-family: $font-raleway;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: $color-black;
+  display: flex;
+}
+
+.order-form__label-required-icon {
+  position: relative;
+  width: 9px;
+  height: 9px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url("../../img/decorative-images/asterisk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+  }
 }
 
 .order-form__input {
-  border: none;
-  box-shadow: inset 0 -2px 0 $color-black;
+  background-color: transparent;
+  border: 1px solid $color-green;
+  border-radius: 20px;
   width: 100%;
-  padding: 0;
+  max-width: 268px;
+  padding: 16px 12px 16px 12px;
   font-family: $font-raleway;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: $color-black;
 
   @include tablet {
-    background-color: transparent;
+    max-width: 300px;
     font-size: 19px;
   }
 
   &::placeholder {
-    color: rgba($color-black, 0.3);
-  }
-
-  &:not(:placeholder-shown) {
-    box-shadow: inset 0 -2px 0 $color-green;
+    color: rgba(142, 152, 146, 0.7);
   }
 
   &:hover {
@@ -301,6 +336,8 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .order-form__mark--radio::before {
@@ -378,7 +415,6 @@
   color: $color-black;
   padding: 17px;
   border: none;
-  box-shadow: inset 2px 2px 0 $color-black, inset -2px -2px 0 $color-black;
   width: 100%;
   resize: none;
 
@@ -397,4 +433,8 @@
   &:hover {
     box-shadow: inset 2px 2px 0 $color-green, inset -2px -2px 0 $color-green;
   }
+}
+
+.order-form__button-submit {
+  width: 264px;
 }

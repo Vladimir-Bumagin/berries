@@ -252,35 +252,45 @@
           <ul class="order-form__list">
             <li class="order-form__item">
               <label class="order-form__label">
-                <span class="order-form__label-text order-form__label-text--required">Имя:</span>
-                <input class="order-form__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+                <span class="order-form__label-text order-form__label-text--required">Имя
+                  <span class="order-form__label-required-icon"></span>
+                </span>
+                <input class="order-form__input" type="text" name="name" placeholder="Введите ваше имя" required>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__label">
-                <span class="order-form__label-text order-form__label-text--required">Телефон</span>
+                <span class="order-form__label-text order-form__label-text--required">Телефон
+                  <span class="order-form__label-required-icon"></span>
+                </span>
                 <input class="order-form__input" type="tel" name="phone" value=""
-                  placeholder="+7&nbsp;ХХХ&nbsp;ХХХ&nbsp;ХХ&nbsp;ХХ" required aria-label="Введите номер телефона.">
+                  placeholder="+7&nbsp;xxx&nbsp;xxx&nbsp;xx&nbsp;xx" required aria-label="Введите номер телефона.">
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__label">
-                <span class="order-form__label-text order-form__label-text--required">Email</span>
+                <span class="order-form__label-text order-form__label-text--required">Email
+                  <span class="order-form__label-required-icon"></span>
+                </span>
                 <input class="order-form__input" type="email" name="email" value="" placeholder="Ваш email" required>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__label">
-                <span class="order-form__label-text order-form__label-text--required">Адрес</span>
-                <textarea class="order-form__input" name="address" placeholder="Адрес в Санкт-Петербурге" required>
+                <span class="order-form__label-text order-form__label-text--required">Адрес
+                  <span class="order-form__label-required-icon"></span>
+                </span>
+                <textarea class="order-form__input order-form__input--text-area-address" name="address" cols="30"
+                  rows="3" placeholder="Адрес в Санкт-Петербурге" required>
                 </textarea>
               </label>
             </li>
             <li class="order-form__item">
               <label class="order-form__label">
                 <span class="order-form__label-text order-form__label-text--text-area">Пожелания к заказу</span>
-                <textarea class="order-form__text-area" name="commentary" cols="30" rows="6"
-                  placeholder="Чем мы можем вам помочь?" aria-label="Дополните сведения, если необходимо."></textarea>
+                <textarea class="order-form__input order-form__input--text-area-commentary" name="commentary" cols="30"
+                  rows="6" placeholder="Чем мы можем вам помочь?"
+                  aria-label="Дополните сведения, если необходимо."></textarea>
               </label>
             </li>
           </ul>
