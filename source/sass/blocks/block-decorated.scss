@@ -1,0 +1,23 @@
+.block-decorated {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    width: 228px;
+    height: 32px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../img/line-leaf-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablet {
+      background-image: url("../../img/line-leaf-tablet.svg");
+      width: 296px;
+      height: 42px;
+    }
+  }
+}
