@@ -2,6 +2,13 @@
   padding-top: 124px;
   padding-bottom: 89px;
   max-width: 872px;
+
+  &.container {
+    @include tablet {
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+  }
 }
 
 .order-form__form {
@@ -36,6 +43,35 @@
       column-gap: 48px;
       row-gap: 24px;
     }
+  }
+
+  .order-form__form-field--type-of-storage & {
+    display: grid;
+    row-gap: 23px;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
+      row-gap: 24px;
+      column-gap: 56px;
+    }
+  }
+
+  .order-form__form-field--type-of-delivery & {
+    display: grid;
+    row-gap: 32px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, minmax(205px, max-content));
+      column-gap: 24px;
+    }
+  }
+}
+
+.order-form__form-field--berries,
+.order-form__form-field--type-of-delivery,
+.order-form__form-field--type-of-storage {
+  @include tablet {
+    padding-left: 46px;
   }
 }
 
@@ -124,6 +160,22 @@
   }
 }
 
+.order-form__item--type-of-storage {
+  @include tablet {
+    &:nth-child(2) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+
+  @include desktop {
+    &:nth-child(2) {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+}
+
 .order-form__label {
   position: relative;
   flex-direction: column;
@@ -133,6 +185,12 @@
   display: flex;
   width: 100%;
   padding-left: 36px;
+
+  &--large-padding {
+    @include tablet {
+      padding-left: 48px;
+    }
+  }
 }
 
 .order-form__input {
@@ -209,7 +267,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  width: 100%;
+  max-width: 400px;
   padding: 0;
   margin: 0 0 32px 0;
 
@@ -289,6 +347,26 @@
   @include tablet {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .order-form__form-field--berries,
+  .order-form__form-field--type-of-storage & {
+    padding-top: 2px;
+    padding-bottom: 3px;
+
+    @include tablet {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+  }
+
+  .order-form__form-field--type-of-delivery & {
+    max-width: 190px;
+
+    @include tablet {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
   }
 }
 
