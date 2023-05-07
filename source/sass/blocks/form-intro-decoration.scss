@@ -1,0 +1,13 @@
+.form-intro-decoration {
+  width: 100%;
+}
+
+.form-intro-decoration__image {
+  object-fit: cover;
+  width: 100%;
+  display: flex;
+
+  @include tablet {
+    height: 200px;
+  }
+}

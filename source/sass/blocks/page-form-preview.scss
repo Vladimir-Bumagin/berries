@@ -1,0 +1,48 @@
+.page-form-preview {
+  max-width: 268px;
+  margin: 0 auto;
+  padding: 64px 0 41px 0;
+
+  @include tablet {
+    max-width: 532px;
+  }
+}
+
+.page-form-preview__title {
+  font-family: $font-comfortaa;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-green;
+  text-align: center;
+  margin: 0 auto 32px auto;
+  max-width: 268px;
+
+  @include tablet {
+    font-size: 52px;
+    line-height: 58px;
+    max-width: 532px;
+    margin-bottom: 48px;
+  }
+}
+
+.page-form-preview__subtitle {
+  font-family: $font-raleway;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-black;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 250px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 512px;
+  }
+
+  @include desktop {
+    max-width: 550px;
+  }
+}

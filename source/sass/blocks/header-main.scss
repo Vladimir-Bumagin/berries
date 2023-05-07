@@ -70,11 +70,11 @@
   }
 
   &:hover {
-    opacity: 0.8;
+    color: $color-green-hover;
   }
 
   &:active {
-    opacity: 0.6;
+    color: $color-green-active;
   }
 
   &--current {

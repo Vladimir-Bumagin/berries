@@ -86,7 +86,7 @@
   }
 
   &:hover {
-    opacity: 0.6;
+    background-image: url("../../img/close-menu-hover.svg");
   }
 
   &:active {
@@ -104,4 +104,8 @@
   width: 60px;
   height: 60px;
   background-image: url("../../img/open-menu.svg");
+
+  &:hover {
+    background-image: url("../../img/open-menu-hover.svg");
+  }
 }
