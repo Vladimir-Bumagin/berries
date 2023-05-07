@@ -113,7 +113,7 @@
         <fieldset class="order-form__form-field order-form__form-field--berries">
           <h3 class="order-form__form-legend">Выберите ягоды</h3>
           <ul class="order-form__list">
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="cowberry">
@@ -121,7 +121,7 @@
                 <span class="order-form__label-additional-text">брусника</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="cherry" checked>
@@ -129,7 +129,7 @@
                 <span class="order-form__label-additional-text">вишня</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="bog-whortleberry">
@@ -137,7 +137,7 @@
                 <span class="order-form__label-additional-text">голубика</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="blackberry">
@@ -145,7 +145,7 @@
                 <span class="order-form__label-additional-text">ежевика</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="strawberry">
@@ -153,15 +153,15 @@
                 <span class="order-form__label-additional-text">клубника</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="cranberry">
                 <span class="order-form__mark order-form__mark--checkbox"></span>
-                <span class="order-form__label-additional-text">брусника</span>
+                <span class="order-form__label-additional-text">клюква</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="gooseberry">
@@ -169,7 +169,7 @@
                 <span class="order-form__label-additional-text">крыжовник</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="raspberry">
@@ -177,7 +177,7 @@
                 <span class="order-form__label-additional-text">малина</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="cloudberry" disabled>
@@ -185,7 +185,7 @@
                 <span class="order-form__label-additional-text">морошка</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--berries">
               <label class="order-form__label">
                 <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
                   name="berries" value="whortleberry" disabled>
@@ -276,13 +276,14 @@
                 </textarea>
               </label>
             </li>
+            <li class="order-form__item">
+              <label class="order-form__label">
+                <span class="order-form__label-text order-form__label-text--text-area">Пожелания к заказу</span>
+                <textarea class="order-form__text-area" name="commentary" cols="30" rows="6"
+                  placeholder="Чем мы можем вам помочь?" aria-label="Дополните сведения, если необходимо."></textarea>
+              </label>
+            </li>
           </ul>
-        </fieldset>
-        <fieldset class="order-form__form-field order-form__form-field--add">
-          <label class="order-form__form-legend">Пожелания к заказу
-            <textarea class="order-form__text-area" name="commentary" cols="30" rows="6"
-              placeholder="Чем мы можем вам помочь?" aria-label="Дополните сведения, если необходимо."></textarea>
-          </label>
         </fieldset>
         <div class="order-form__form-button-wrapper">
           <button class="order-form__button-submit button" type="submit">Заказать</button>
