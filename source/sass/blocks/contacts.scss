@@ -19,6 +19,10 @@
 
   &--page-form {
     padding-top: 91px;
+
+    @include tablet {
+      padding-top: 114px;
+    }
   }
 }
 

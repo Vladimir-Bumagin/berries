@@ -10,7 +10,7 @@
     padding: 22px 0 19px 0;
   }
 
-  @include tablet {
+  @include desktop {
     padding: 24px 0 21px 0;
   }
 
@@ -19,6 +19,12 @@
 
     @include tablet {
       box-shadow: 0 4px 4px rgba(88, 13, 101, 0.25);
+    }
+  }
+
+  &--page-form {
+    @include tablet {
+      padding: 24px 0 17px 0;
     }
   }
 }
