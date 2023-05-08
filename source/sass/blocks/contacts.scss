@@ -192,3 +192,9 @@
     height: 372px;
   }
 }
+
+.contacts__email-icon,
+.contacts__address-icon,
+.contacts__phone-icon {
+  flex-shrink: 0;
+}

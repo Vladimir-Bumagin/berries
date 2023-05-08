@@ -84,6 +84,8 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: flex-end;
   margin-top: 9px;
 
   &:hover {
@@ -98,6 +100,7 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 39px;
+    width: unset;
   }
 
   @include desktop {
@@ -112,4 +115,8 @@
     width: 26px;
     height: 32px;
   }
+}
+
+.main-footer__copyrights-text {
+  max-width: 150px;
 }

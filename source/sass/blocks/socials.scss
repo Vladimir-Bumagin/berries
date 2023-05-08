@@ -1,5 +1,5 @@
 .socials {
-  margin: 0;
+  margin: 16px 0 0 auto;
   padding: 0;
   list-style-type: none;
   display: grid;
@@ -7,8 +7,6 @@
   gap: 20px;
   min-width: 136px;
   max-width: 100%;
-  margin-top: 20px;
-  margin-left: auto;
 
   @include tablet {
     grid-template-columns: repeat(auto-fit, 40px);
