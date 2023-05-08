@@ -47,7 +47,7 @@
   color: $color-green;
   max-width: 265px;
   text-align: center;
-  margin: 0 0 32px 0;
+  margin: 0 0 38px 0;
 
   @include tablet {
     font-size: 48px;
@@ -71,8 +71,8 @@
   max-width: 208px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 15%;
+  gap: 19px;
+  margin-bottom: 17%;
 
   @include tablet {
     max-width: 532px;
@@ -132,6 +132,7 @@
 
 .hero__order-button {
   width: 264px;
+  padding: 17px 21px 16px 16px;
 
   @include tablet {
     font-size: 28px;

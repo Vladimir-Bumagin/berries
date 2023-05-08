@@ -105,14 +105,14 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
-  margin: 0 0 28px 0;
+  margin: 0 0 26px 0;
 }
 
 .catalog__price-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
   width: 116px;
   font-family: $font-raleway;
   font-weight: 400;
@@ -123,4 +123,6 @@
 
 .catalog__order-button {
   width: 220px;
+  padding: 15px 16px 14px 16px;
+  box-shadow: none;
 }
