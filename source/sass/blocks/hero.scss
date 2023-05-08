@@ -59,7 +59,7 @@
   @include desktop {
     font-size: 52px;
     line-height: 58px;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
     text-align: left;
   }
 }
@@ -82,7 +82,7 @@
 
   @include desktop {
     max-width: 502px;
-    margin: 0 auto 52px auto;
+    margin: 0 auto 59px auto;
   }
 }
 
@@ -142,6 +142,6 @@
   }
 
   @include desktop {
-    margin-left: 25px;
+    margin-left: 36px;
   }
 }

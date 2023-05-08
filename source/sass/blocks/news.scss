@@ -79,6 +79,12 @@
 
   @include desktop {
     padding-bottom: 108px;
+    max-width: 360px;
+    padding-right: 34px;
+
+    &:last-child {
+      transform: translateX(0);
+    }
   }
 
   &::after {
@@ -98,6 +104,10 @@
       height: 40px;
       bottom: 40px;
       background-image: url("../../img/leaf-card-decor-tablet.svg");
+    }
+
+    @include desktop {
+      bottom: 43px;
     }
   }
 }
@@ -125,7 +135,8 @@
   }
 
   @include desktop {
-    max-width: 288px;
+    max-width: 289px;
+    margin-bottom: 22px;
   }
 }
 

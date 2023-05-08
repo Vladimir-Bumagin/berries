@@ -10,6 +10,10 @@
     padding: 22px 0 19px 0;
   }
 
+  @include tablet {
+    padding: 24px 0 21px 0;
+  }
+
   &.no-js {
     box-shadow: none;
 
@@ -86,6 +90,11 @@
   @include tablet {
     width: 58px;
     height: 60px;
+    margin-right: 8px;
+  }
+
+  @include desktop {
+    width: 60px;
     margin-right: 8px;
   }
 }

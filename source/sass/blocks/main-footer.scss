@@ -17,6 +17,10 @@
   @include tablet {
     padding-left: 21px;
   }
+
+  @include desktop {
+    padding-left: 41px;
+  }
 }
 
 .main-footer__logo {
@@ -34,6 +38,11 @@
   @include tablet {
     margin-top: 22px;
     margin-right: 40px;
+  }
+
+  @include desktop {
+    margin-top: 24px;
+    margin-right: 34px;
   }
 
   &:hover {
@@ -89,6 +98,10 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 39px;
+  }
+
+  @include desktop {
+    transform: translateX(-3px);
   }
 }
 

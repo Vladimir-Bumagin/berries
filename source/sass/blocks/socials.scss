@@ -16,6 +16,10 @@
     max-width: 300px;
     margin-top: 36px;
   }
+
+  @include desktop {
+    margin-top: 33px;
+  }
 }
 
 .socials__link {

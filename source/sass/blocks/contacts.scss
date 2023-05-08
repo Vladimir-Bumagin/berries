@@ -29,6 +29,7 @@
   @include desktop {
     max-width: 550px;
     order: 1;
+    padding-top: 23px;
   }
 }
 
@@ -75,6 +76,7 @@
 
   @include desktop {
     margin-right: 56px;
+    transform: translateX(0);
   }
 }
 
@@ -101,6 +103,7 @@
 
   @include desktop {
     margin-right: 56px;
+    transform: translateX(0);
   }
 }
 
