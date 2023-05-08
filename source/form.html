@@ -14,7 +14,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--not-index">
   <header class="header-main no-js">
     <div class="header-main__container container">
       <div class="header-main__logo-wrapper">
@@ -64,16 +64,16 @@
         <div class="main-nav__wrapper pop-up-menu">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#catalog">Каталог</a>
+              <a class="main-nav__link" href="#">Каталог</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#news">Новости</a>
+              <a class="main-nav__link" href="#">Новости</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#contacts">Контакты</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="form.html">Заказать</a>
+              <span class="main-nav__link main-nav__link--current">Заказать</span>
             </li>
           </ul>
         </div>
@@ -249,13 +249,15 @@
         </fieldset>
         <fieldset class="order-form__form-field order-form__form-field--personal-info">
           <h3 class="order-form__form-legend">Ваши контакты</h3>
+          <!-- При неправильном вводе данных и незаполненных полей с атрибутом required к input с классом order-form__input добавлять класс is-invalid -->
           <ul class="order-form__list">
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--name">
               <label class="order-form__label">
                 <span class="order-form__label-text order-form__label-text--required">Имя
                   <span class="order-form__label-required-icon"></span>
                 </span>
                 <input class="order-form__input" type="text" name="name" placeholder="Введите ваше имя" required>
+                <span class="order-form__input-error">Подсказка</span>
               </label>
             </li>
             <li class="order-form__item">
@@ -265,6 +267,7 @@
                 </span>
                 <input class="order-form__input" type="tel" name="phone" value=""
                   placeholder="+7&nbsp;xxx&nbsp;xxx&nbsp;xx&nbsp;xx" required aria-label="Введите номер телефона.">
+                <span class="order-form__input-error">Подсказка</span>
               </label>
             </li>
             <li class="order-form__item">
@@ -273,19 +276,20 @@
                   <span class="order-form__label-required-icon"></span>
                 </span>
                 <input class="order-form__input" type="email" name="email" value="" placeholder="Ваш email" required>
+                <span class="order-form__input-error">Подсказка</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--address">
               <label class="order-form__label">
                 <span class="order-form__label-text order-form__label-text--required">Адрес
                   <span class="order-form__label-required-icon"></span>
                 </span>
                 <textarea class="order-form__input order-form__input--text-area-address" name="address" cols="30"
-                  rows="3" placeholder="Адрес в Санкт-Петербурге" required>
-                </textarea>
+                  rows="3" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+                <span class="order-form__input-error">Подсказка</span>
               </label>
             </li>
-            <li class="order-form__item">
+            <li class="order-form__item order-form__item--commentary">
               <label class="order-form__label">
                 <span class="order-form__label-text order-form__label-text--text-area">Пожелания к заказу</span>
                 <textarea class="order-form__input order-form__input--text-area-commentary" name="commentary" cols="30"
@@ -295,9 +299,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="order-form__form-button-wrapper">
-          <button class="order-form__button-submit button" type="submit">Заказать</button>
-        </div>
+        <button class="order-form__button-submit button" type="submit">Заказать</button>
       </form>
     </section>
     <section class="contacts block-decorated" id="contacts">
