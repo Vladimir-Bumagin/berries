@@ -13,6 +13,10 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  @include tablet {
+    padding-left: 21px;
+  }
 }
 
 .main-footer__logo {
@@ -29,6 +33,7 @@
 
   @include tablet {
     margin-top: 22px;
+    margin-right: 40px;
   }
 
   &:hover {
@@ -48,6 +53,7 @@
   @include tablet {
     width: 58px;
     height: 60px;
+    margin-right: 9px;
   }
 }
 

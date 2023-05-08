@@ -7,7 +7,7 @@
   position: relative;
 
   @include tablet {
-    padding: 22px 0 22px 0;
+    padding: 22px 0 19px 0;
   }
 
   &.no-js {
@@ -86,6 +86,7 @@
   @include tablet {
     width: 58px;
     height: 60px;
+    margin-right: 8px;
   }
 }
 
@@ -94,5 +95,6 @@
 
   @include tablet {
     display: flex;
+    padding-top: 2px;
   }
 }

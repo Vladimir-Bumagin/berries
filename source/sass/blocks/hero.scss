@@ -9,7 +9,7 @@
   background-color: #dce5ee;
 
   @include tablet {
-    padding-top: 135px;
+    padding-top: 143px;
     padding-bottom: 54.6%;
     background-image: url("../../img/decorative-images/hero-back-tablet.jpg");
   }
@@ -53,7 +53,7 @@
     font-size: 48px;
     line-height: 54px;
     max-width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   @include desktop {
@@ -76,7 +76,8 @@
 
   @include tablet {
     max-width: 532px;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
+    gap: 24px;
   }
 
   @include desktop {
