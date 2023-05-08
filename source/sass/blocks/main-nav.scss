@@ -33,7 +33,7 @@
 .main-nav__link {
   display: flex;
   width: 100%;
-  padding: 16px 14px 16px 40px;
+  padding: 15px 14px 15px 40px;
   color: $color-black;
   font-family: $font-raleway;
   font-size: 20px;
@@ -69,7 +69,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 4px;
-  right: 26px;
+  right: 14px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/close-menu.svg");

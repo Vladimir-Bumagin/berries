@@ -26,6 +26,10 @@
     @include tablet {
       padding: 24px 0 17px 0;
     }
+
+    @include desktop {
+      padding-bottom: 21px;
+    }
   }
 }
 

@@ -7,6 +7,10 @@
     max-width: 532px;
     padding-top: 100px;
   }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
 }
 
 .page-form-preview__title {

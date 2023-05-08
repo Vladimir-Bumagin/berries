@@ -8,10 +8,20 @@
     padding-bottom: 85px;
   }
 
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 83px;
+  }
+
   &.container {
     @include tablet {
       padding-left: 72px;
       padding-right: 72px;
+    }
+
+    @include desktop {
+      padding-left: 65px;
+      padding-right: 16px;
     }
   }
 
@@ -30,6 +40,10 @@
   @include tablet {
     gap: 50px;
   }
+
+  @include desktop {
+    gap: 57px;
+  }
 }
 
 .order-form__form-field {
@@ -44,6 +58,23 @@
       align-items: center;
       transform: translateY(-5px);
     }
+
+    @include desktop {
+      display: block;
+      transform: translateY(-9px);
+    }
+  }
+}
+
+.order-form__form-field--berries,
+.order-form__form-field--type-of-delivery,
+.order-form__form-field--type-of-storage {
+  @include tablet {
+    padding-left: 46px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }
 
@@ -79,7 +110,11 @@
     @include tablet {
       grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
       row-gap: 24px;
-      column-gap: 56px;
+      column-gap: 53px;
+    }
+
+    @include desktop {
+      column-gap: 44px;
     }
   }
 
@@ -92,6 +127,11 @@
       grid-template-columns: repeat(2, minmax(205px, max-content));
       column-gap: 4px;
     }
+
+    @include desktop {
+      grid-template-columns: 288px 354px;
+      column-gap: 11px;
+    }
   }
 
   .order-form__form-field--personal-info & {
@@ -102,14 +142,6 @@
       grid-template-columns: repeat(2, minmax(300px, max-content));
       column-gap: 24px;
     }
-  }
-}
-
-.order-form__form-field--berries,
-.order-form__form-field--type-of-delivery,
-.order-form__form-field--type-of-storage {
-  @include tablet {
-    padding-left: 46px;
   }
 }
 
@@ -241,6 +273,10 @@
   &--large-padding {
     @include tablet {
       padding-left: 48px;
+    }
+
+    @include desktop {
+      padding-left: 36px;
     }
   }
 
@@ -379,11 +415,19 @@
     margin-bottom: 40px;
   }
 
+  @include desktop {
+    margin-bottom: 48px;
+  }
+
   .order-form__form-field--type-of-delivery & {
     margin-bottom: 29px;
 
     @include tablet {
       margin-bottom: 37px;
+    }
+
+    @include desktop {
+      transform: translateY(-10px);
     }
   }
 }
@@ -479,6 +523,10 @@
       padding-top: 1px;
       padding-bottom: 1px;
     }
+
+    @include desktop {
+      max-width: 100%;
+    }
   }
 }
 
@@ -515,6 +563,10 @@
     transform: translateY(-15px);
     padding-top: 18px;
     padding-right: 18px;
+  }
+
+  @include desktop {
+    transform: translate(-29px, -19px);
   }
 }
 
